@@ -1,3 +1,45 @@
 body {
   text-align: center;
 }
+header {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+button {
+  background-color: #f4f4f4;
+  border: 1px solid #4c4c4c;
+  border-radius: 4px;
+}
+button:active {
+  background-color: #c6c6c6;
+}
+section {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 2px solid black;
+  border-bottom: 2px dotted #4c4c4c;
+  border-radius: 5px;
+}
+#headline {
+  font-size: 2em;
+  border-bottom: double black;
+  text-transform: capitalize;
+  padding: .1em;
+  margin-top: .5em;
+  margin-bottom: 0;
+}
+h2 {
+  margin: .2em;
+}
+img {
+  width: 60%;
+}
+article {
+  display: inline-block;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
