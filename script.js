@@ -18,7 +18,7 @@ $(function() {
       return things[Math.floor(Math.random()*things.length)];
     }
 
-    const headlines = ["Millenials are " + verb() + " " + noun() + " because " + reason(), "Millenials are " + verb() + " " + noun() + " with " + thing(), "Millenials hate " + noun() + " because " + reason()];
+    const headlines = ["Millennials are " + verb() + " " + noun() + " because " + reason(), "Millennials are " + verb() + " " + noun() + " with " + thing(), "Millennials hate " + noun() + " because " + reason()];
     let headline = function() {
       return headlines[Math.floor(Math.random()*headlines.length)];
     }
