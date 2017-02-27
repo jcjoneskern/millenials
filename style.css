@@ -10,6 +10,9 @@ button {
   border: 1px solid #4c4c4c;
   border-radius: 4px;
 }
+button:focus {
+  outline: none;
+}
 button:active {
   background-color: #c6c6c6;
 }
@@ -38,6 +41,7 @@ img {
   width: 60%;
 }
 article {
+  text-align: justify;
   display: inline-block;
   -webkit-column-count: 3;
   -moz-column-count: 3;
