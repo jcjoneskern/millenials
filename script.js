@@ -5,23 +5,14 @@ $(function() {
   const things = ["entitlement", "communism", "kale", "excessive vacations", "social media", "selfies", "memes", "feelings", "participation trophies", "crowdfunding", "sexting", "the homosexual agenda", "the liberal agenda", "smartphones", "Pepe", "hashtags", "avocados", "emojis", "Netflix and chill"];
 
   function getHeadline() {
-    let verb = function() {
-      return verbs[Math.floor(Math.random()*verbs.length)];
-    }
-    let noun = function() {
-      return nouns[Math.floor(Math.random()*nouns.length)];
-    }
-    let reason = function() {
-      return reasons[Math.floor(Math.random()*reasons.length)];
-    }
-    let thing = function() {
-      return things[Math.floor(Math.random()*things.length)];
-    }
+    let verb = () => verbs[Math.floor(Math.random()*verbs.length)];
+    let noun = () => nouns[Math.floor(Math.random()*nouns.length)];
+    let reason = () => reasons[Math.floor(Math.random()*reasons.length)];
+    let thing = () => things[Math.floor(Math.random()*things.length)];
 
     const headlines = ["Millennials are " + verb() + " " + noun() + " because " + reason(), "Millennials are " + verb() + " " + noun() + " with " + thing(), "Millennials hate " + noun() + " because " + reason()];
-    let headline = function() {
-      return headlines[Math.floor(Math.random()*headlines.length)];
-    }
+
+    let headline = () => headlines[Math.floor(Math.random()*headlines.length)];
 
     return headline();
   }
